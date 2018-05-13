@@ -29,6 +29,7 @@ void calculator::save()
 	ofstream sfout("save.dat",ios::out|ios::trunc);
 	sfout<<t<<endl;
 	p->save(sfout);
+	sfout.close();
 }
 void calculator::load(double ic, double dt, unsigned m,unsigned autosave=0)
 {
@@ -39,6 +40,7 @@ void calculator::load(double ic, double dt, unsigned m,unsigned autosave=0)
 	d_t=dt;
 	total_step=m;
 	ds=autosave;
+	lfin.close();
 }
 vector<double> calculator::cal_k(vector<double> &x,const vector<double> &k,unsigned ki)
 {
