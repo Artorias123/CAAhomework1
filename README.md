@@ -15,6 +15,7 @@ total_step(计算步数):value
 t(终止时间):value  
 grid_number(网格数量):value  
 total_step和t具体怎么判断结束我忘了。。。。。。  
+  
 grid_number和dx、begin、end怎么分配网格我也忘了。。。。  
 尽量都手动匹配吧  
   
